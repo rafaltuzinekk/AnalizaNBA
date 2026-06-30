@@ -27,21 +27,18 @@ A comprehensive statistical dashboard was generated to visually interpret the da
 * Scatter plot mapping shot distance against the closest defender's distance.
 * Individual player profiling (e.g., Stephen Curry), computing specific metrics such as average distance, variance, and success rate.
 
-![EDA Dashboard]([<img width="1784" height="982" alt="Diagrams" src="https://github.com/user-attachments/assets/79813732-6066-41c3-83a8-a1e6fde6f26e" />
-])
+<img width="1784" height="982" alt="Diagrams" src="https://github.com/user-attachments/assets/79813732-6066-41c3-83a8-a1e6fde6f26e" />
 
 ### 3. Machine Learning Application
 The project implements both unsupervised and supervised machine learning techniques:
 
 * **Unsupervised Learning (K-Means Clustering):** Shots were segmented into three distinct `action_types` based on standardized touch time and shot distance. The algorithm successfully identified logical clusters: quick close-range shots, quick catch-and-shoot perimeter shots, and isolation plays with extended ball-handling time.
 
-![K-Means Clustering]([<img width="846" height="552" alt="Cluster" src="https://github.com/user-attachments/assets/20684190-b654-427c-aef0-bf022e1f7e20" />
-])
+<img width="846" height="552" alt="Cluster" src="https://github.com/user-attachments/assets/20684190-b654-427c-aef0-bf022e1f7e20" />
 
 * **Supervised Learning (Decision Tree Classifier):** A predictive model was trained to classify shot outcomes (`made` vs. `missed`). To prevent overfitting and optimize computational efficiency, **Principal Component Analysis (PCA)** was applied, retaining components that explain 95% of the data's variance. 
 
-![Confusion Matrix]([<img width="665" height="550" alt="matrix" src="https://github.com/user-attachments/assets/8d378a35-ee26-4f3d-a81c-a66140a9d752" />
-])
+<img width="665" height="550" alt="matrix" src="https://github.com/user-attachments/assets/8d378a35-ee26-4f3d-a81c-a66140a9d752" />
 
 ## 💡 Key Findings
 * The predictive model achieved a baseline accuracy of **~54%** on the test set. While seemingly modest, this highlights the inherent stochasticity and chaotic nature of basketball; predicting whether a shot goes in based strictly on basic spatial metrics is a highly complex task.
